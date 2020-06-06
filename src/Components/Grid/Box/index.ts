@@ -53,6 +53,7 @@ export interface BoxProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
 
 export const Box = styled.div<BoxProps>`
     display:flex;
+    width: 100%;
     justify-content: ${({ justify }) => (justify ? justify : 'flex-start')};
     align-items: ${({ items }) => (items ? items : 'center')};  
     flex-direction: ${({ direction }) => direction ? direction : 'row'};
